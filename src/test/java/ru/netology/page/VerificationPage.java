@@ -15,10 +15,12 @@ public class VerificationPage {
     private SelenideElement errorNotification;
 
     public void verifyVerificationPageVisiblity() {
-        errorNotification.shouldBe(visible);
+        codeField.shouldBe(visible);
     }
 
-    public void verifyErrorNotificationVisiblity() { errorNotification.shouldBe(visible); }
+    public void verifyErrorNotificationVisiblit() {
+        errorNotification.shouldBe(visible);
+    }
 
     public DashboardPage validVerify(String verificationCode) {
         verify(verificationCode);
